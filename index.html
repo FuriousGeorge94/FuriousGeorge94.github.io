@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>json</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">json</h1>
+</header>
+<h1 id="georges-notes-a-work-in-progress">George’s Notes: A Work in <strong><em>Progress</em></strong></h1>
+<p>—learn</p>
+<ul>
+<li>Resources:
+<ul>
+<li>The Linux Command line</li>
+<li>SCIP</li>
+<li>Eloquent Javascript</li>
+<li>Learning Vimscript the hard way (https://learnvimscriptthehardway.stevelosh.com/)</li>
+<li>Pandoc users manual(https://pandoc.org/MANUAL.html)</li>
+<li>vim user manual(http://vimdoc.sourceforge.net/htmldoc/usr_12.html)</li>
+</ul></li>
+</ul>
+<p>This is a paragraph. :)</p>
+<p>Here is a worse paragraph :(</p>
+<p><em>HERE</em> <em>IS</em> A <strong>fat</strong> <em>GIRAFFE</em></p>
+<figure>
+<img src="https://ae01.alicdn.com/kf/HTB1QWylaOHrK1Rjy0Flq6AsaFXa9.jpg" alt="" /><figcaption>giraffe</figcaption>
+</figure>
+<p><a href="www.gmail.com">the best email is</a></p>
+<pre><code>        ^
+      (   )
+    (       )
+   (         )
+    *(.) (.)*
+      *   *
+        v</code></pre>
+<p>autodidact???</p>
+<p>*** learn git ***</p>
+<ul>
+<li>let’s fucking learn shit *</li>
+<li><em>BOOKS</em>:
+<ul>
+<li>read shader book</li>
+<li>the linux command line</li>
+</ul></li>
+</ul>
+<p>**** take course ****</p>
+<p>GPG key ID: 4AEE18F83AFDEB23 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEqxm0xiFilJS9skaHztEibosT9c8QTSn+vCaYPhNNGt geo_sthom@DESKTOP-H5SJ2GO</p>
+<p>geo.thom@gmail.com 69:f2:65:75:3c:66:f5:de:f0:37:c3:f2:51:9d:27:b5 (/home/geo_thom/.ssh/id_ed25519):</p>
+<p>*** CNTRL-C Important and ctr-d stops linux jobs ***</p>
+<p>Never do ** ctrl s **</p>
+<h2 id="you-can-use-multiiple-commands-in-the-shell-using">You can use multiiple commands in the shell using ;</h2>
+<h2 id="title-linux">title: linux</h2>
+<h2 id="linux">linux</h2>
+<ul>
+<li><p>shell commands:</p>
+<ul>
+<li>ls</li>
+<li>pwd</li>
+<li>clear</li>
+<li>cd</li>
+<li>cd ..</li>
+<li>mkdir</li>
+<li>mv (rename)</li>
+<li>2 crl sequences – CNTRL-C, CNTRL-D</li>
+<li>touch</li>
+<li>which</li>
+<li>alias</li>
+<li>type + (alias) displays what alias is actually writing</li>
+<li> + (alias) overides alias</li>
+<li>clip.exe &lt; (filename) #should try and get xclip to work</li>
+<li>whatis - displays a brief explanation of program</li>
+<li>coreurils – a menu with hyperlinks to GNU programs</li>
+<li>cat - concatenate files</li>
+<li>sort - sort lines of text</li>
+<li>uniq - report or omit repeated lines</li>
+<li>grep - print lines matching a pattern</li>
+<li>wc - print newline, word, and byte counts for each file</li>
+<li>head - output first part of file</li>
+<li>tail - output last part of file</li>
+<li>tee - read from standard input and write to standard output and files</li>
+<li>file descriptor: 0 - stdin, 1 -std out, 2 - error</li>
+<li>&gt; - redirects standard output <strong>overrites or creates file</strong></li>
+<li>&gt;&gt; - redirects standard output but appends to file</li>
+<li>‘#’ + redirect - channels to files discriptor (ex: ls /~ 2&gt; error.txt)</li>
+<li>redirecting both stout and error - ls /~ &gt; text.txt 2&gt;&amp;1 (older)</li>
+<li>newer way to redirect both stdout and error - ls /~ &amp;&gt; text.txt</li>
+<li>must redirect error last</li>
+<li>bit bucket - /dev/null, redirects get thrown away(like trash can)</li>
+<li>cat + (file) - copies file into stdin</li>
+<li>cat with no args waits for you to type, then Ctrl-d indicates eof</li>
+<li>can redirect(<vor >) cat into a file(stdout) or command line(stdin)</li>
+<li><div class="line-block">- <em>pipe operator</em> pipes stdout of one command into stdin of another</div></li>
+<li>(command) | less- displays output of command that creates stdout</li>
+<li>&gt; - connects command with file</li>
+<li><div class="line-block">- puts output of commandd to input of another</div></li>
+<li>grep <em>pattern</em> [file…] - finds patterns in text files</li>
+<li>filter - commands combined together with |</li>
+<li>tee - reads stdin into file and stdout - ls ~ | tee t.txt | less</li>
+<li>$ - indicates variables</li>
+<li>command substitution - ls -l $(which lynx)</li>
+<li>history - shows comand history</li>
+<li>can use ! + history# to repeat that command</li>
+<li>basename - strips the full path of file down</li>
+<li>uname - print system information</li>
+<li>trap arg signals - execute command when a signal is recieved</li>
+</ul></li>
+<li><p>Commom signals:</p>
+<ul>
+<li>SIGHUP - value 1: signifies hangup</li>
+<li>SIGINT - value 2: signifies interupt from keyboard</li>
+<li>SIGKILL - value 9: signifies kill signal (<strong>Can’t be stopped</strong>)</li>
+<li>SIGTERM - value 15: signifies termination signal</li>
+<li>SIGSTOP - value 17,19,23: signifies stop the process</li>
+</ul></li>
+<li><p>Pocesses:</p>
+<ul>
+<li>daemon programs - programs with no ui that run in background</li>
+<li>when a program launches another -parent process prodces child process</li>
+<li>CTRL-s supsends processes while CNTRL-q resumes them</li>
+<li>Process related commands:
+<ul>
+<li>top - display tasks</li>
+<li>jobs - diplay a list of active jobs</li>
+<li>bg - Put job in background</li>
+<li>fg - put job in foreground</li>
+<li>kill- send signall to process</li>
+<li>killall - kill processes by name</li>
+<li>shutdown - reboot or shutdown system</li>
+<li>ps - prints snapshot of processes currently running
+<ul>
+<li>x - prints all processes regardless of terminal controlled by</li>
+<li>aux - more info than x</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Shell Variables:</p>
+<ul>
+<li>$# - variable that stores the number of arguments</li>
+<li>$@ - variable that stores the paramaters that were passed</li>
+<li>$? - variable that stores the last success code</li>
+<li>$$ - varibale that stores the proccess id (pid) of a program</li>
+</ul></li>
+<li><p>Permissions</p>
+<ul>
+<li>chmod u=wrx,go= (file) - changes permisions so you can only run it</li>
+</ul></li>
+<li><p>Control Operators:</p>
+<ul>
+<li>command1 &amp;&amp; command2 - command2 executed if command1 returns status 0</li>
+<li>command1 || command2 - command2 executed if command1 returns nonzero status</li>
+</ul></li>
+<li><p>Temporary Files:</p>
+<ul>
+<li>use TEMP_FILE=$TEMP_DIR/(program name).$$.$RANDOM to name your temporary files</li>
+</ul></li>
+<li><p>Simple Variable cutting:</p>
+<pre><code>var=&quot;apple orange&quot;
+
+# This command will print &#39;apple&#39;
+echo &quot;$var%% *}&quot;
+
+# This command will print &#39;orange&#39;
+echo &quot;${var##* }
+
+</code></pre></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Owner</th>
+<th>Group</th>
+<th>World</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>wrx</td>
+<td>wrx</td>
+<td>wrx</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Octal</th>
+<th style="text-align: center;">Binary</th>
+<th style="text-align: center;">File Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">000</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">001</td>
+<td style="text-align: center;">–x</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">010</td>
+<td style="text-align: center;">-w-</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">011</td>
+<td style="text-align: center;">-wx</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">r–</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">101</td>
+<td style="text-align: center;">r-x</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">rw-</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">111</td>
+<td style="text-align: center;">rwx</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bash-if-for-while-and-case-statements">bash if, for while, and case statements</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">if [[ ]]</span>  <span class="co">#double brackets for bash single for sh</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">then</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="ex">body</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="kw">fi</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="ex">----------------</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">while [[ ]]</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">do</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a></span>
+<span id="cb3-14"><a href="#cb3-14"></a>  <span class="ex">body</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="kw">done</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a></span>
+<span id="cb3-18"><a href="#cb3-18"></a><span class="ex">-----------------</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a></span>
+<span id="cb3-20"><a href="#cb3-20"></a><span class="kw">for</span> <span class="ex">i</span> in <span class="dt">{range}</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="kw">do</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a></span>
+<span id="cb3-23"><a href="#cb3-23"></a>  <span class="ex">body</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="kw">done</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a></span>
+<span id="cb3-27"><a href="#cb3-27"></a></span>
+<span id="cb3-28"><a href="#cb3-28"></a><span class="ex">----------------</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a></span>
+<span id="cb3-30"><a href="#cb3-30"></a><span class="kw">case</span> word<span class="kw"> in</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a></span>
+<span id="cb3-32"><a href="#cb3-32"></a>  [[:lower:]] <span class="kw">|</span> [[:upper:]] <span class="kw">)</span> <span class="bu">echo</span> <span class="st">&quot;you typed a letter&quot;</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a></span>
+<span id="cb3-34"><a href="#cb3-34"></a>  [<span class="ex">0-9</span>] )                     <span class="bu">echo</span> <span class="st">&quot;you typed a digit&quot;</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a></span>
+<span id="cb3-36"><a href="#cb3-36"></a>  <span class="ex">*</span> )                         <span class="bu">echo</span> <span class="st">&quot;you typed anythings else&quot;</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a></span>
+<span id="cb3-38"><a href="#cb3-38"></a><span class="kw">esac</span></span>
+<span id="cb3-39"><a href="#cb3-39"></a></span>
+<span id="cb3-40"><a href="#cb3-40"></a></span>
+<span id="cb3-41"><a href="#cb3-41"></a><span class="ex">----------------</span></span>
+<span id="cb3-42"><a href="#cb3-42"></a></span>
+<span id="cb3-43"><a href="#cb3-43"></a><span class="kw">until</span><span class="bu"> [</span> CONDITION<span class="bu"> ]</span></span>
+<span id="cb3-44"><a href="#cb3-44"></a><span class="kw">do</span></span>
+<span id="cb3-45"><a href="#cb3-45"></a></span>
+<span id="cb3-46"><a href="#cb3-46"></a></span>
+<span id="cb3-47"><a href="#cb3-47"></a>  <span class="ex">body</span></span>
+<span id="cb3-48"><a href="#cb3-48"></a></span>
+<span id="cb3-49"><a href="#cb3-49"></a><span class="kw">done</span></span></code></pre></div>
+<h2 id="bash-error-exit-function">bash Error Exit Function</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"># An error exit function</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="va">PROGNAME=$(</span><span class="fu">basename</span> <span class="va">$0)</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="fu">error_exit()</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="kw">{</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a> <span class="co"># argument is string description of error</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a></span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a>  <span class="bu">echo</span> <span class="st">&quot;</span><span class="va">${PROGNAME}</span><span class="st">: </span><span class="va">${1:-</span><span class="st">&quot;Unknown Error&quot;</span>)<span class="st">&quot; 1&gt;&amp;2</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="st">  exit 1</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="st">}</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="st"># Using error_exit</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a></span>
+<span id="cb4-18"><a href="#cb4-18"></a><span class="st">if cd </span><span class="va">$some_directory</span><span class="st">; then</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a><span class="st">  rm *</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a><span class="st">else</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="st">  error_exit &quot;</span><span class="va">$LINENO</span>:Cannot change directory!  Aborting.<span class="st">&quot;</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="st">fi</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="st"># Implementation using || operator</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a></span>
+<span id="cb4-26"><a href="#cb4-26"></a><span class="st">command || error_exit &quot;</span>error message<span class="st">&quot;</span></span></code></pre></div>
+<h2 id="example-of-a-cleanup-function-and-using-trap">Example of a cleanup function and using trap</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co"># Program to print a text file with headers and footers</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="va">TEMP_FILE=</span>/tmp/printfile.txt</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="fu">clean_up()</span> <span class="kw">{</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a>  <span class="co"># Perform program exit housekeeping</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">rm</span> <span class="va">$TEMP_FILE</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a>  <span class="bu">exit</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="kw">}</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="bu">trap</span> clean_up SIGHUP SIGINT SIGTERM</span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="fu">pr</span> <span class="va">$1</span> <span class="op">&gt;</span> <span class="va">$TEMP_FILE</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="bu">echo</span> -n <span class="st">&quot;Print file? [y/n]: &quot;</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a><span class="bu">read</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a><span class="kw">if</span><span class="bu"> [</span> <span class="st">&quot;</span><span class="va">$REPLY</span><span class="st">&quot;</span> <span class="ot">=</span> <span class="st">&quot;y&quot;</span><span class="bu"> ]</span>; <span class="kw">then</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>  <span class="fu">lpr</span> <span class="va">$TEMP_FILE</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a><span class="kw">fi</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a><span class="ex">clean_up</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a></span></code></pre></div>
+<h2 id="example-of-shift-to-increment-parameters">Example of shift to increment parameters</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="bu">echo</span> <span class="st">&quot;You start with </span><span class="va">$#</span><span class="st"> positional parameters&quot;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a> <span class="co"># Loop until all parameters are used up</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>  <span class="kw">while</span><span class="bu"> [</span> <span class="st">&quot;</span><span class="va">$1</span><span class="st">&quot;</span> <span class="ot">!=</span> <span class="st">&quot;&quot;</span><span class="bu"> ]</span>; <span class="kw">do</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>       <span class="bu">echo</span> <span class="st">&quot;Parameter 1 equals </span><span class="va">$1</span><span class="st">&quot;</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>            <span class="bu">echo</span> <span class="st">&quot;You now have </span><span class="va">$#</span><span class="st"> positional parameters&quot;</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a></span>
+<span id="cb6-11"><a href="#cb6-11"></a>                 <span class="co"># Shift all the parameters down by one</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>                      <span class="bu">shift</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a></span>
+<span id="cb6-14"><a href="#cb6-14"></a>                       <span class="kw">done</span></span></code></pre></div>
+<h2 id="git">git</h2>
+<ul>
+<li>ssh</li>
+<li>~/.gitconfig</li>
+<li>git remote add git@gitlab.com:snapplesauce/eightball.git</li>
+</ul>
+<h2 id="vim">Vim</h2>
+<ul>
+<li>commands:
+<ul>
+<li>To change every occurrence of a character string between two lines,
+<ul>
+<li>:#,#s/old/new/g where #,# are the line numbers of the range of lines where the substitution is to be done.</li>
+<li>:%s/old/new/g to change every occurrence in the whole file.</li>
+<li>:%s/old/new/gc to find every occurrence in the whole file, with a prompt whether to substitute or not.</li>
+<li>use /&lt; and /&gt; to match the beginning and end of a word</li>
+<li>gf - find and edit file under cursor</li>
+</ul>
+<pre><code>Examples:
+:s/a\|b/xxx\0xxx/g       modifies &quot;a b&quot;      to &quot;xxxaxxx xxxbxxx&quot;
+:s/\([abc]\)\([efg]\)/\2\1/g     modifies &quot;af fa bg&quot; to &quot;fa fa gb&quot;
+:s/abcde/abc^Mde/        modifies &quot;abcde&quot;    to &quot;abc&quot;, &quot;de&quot; (two lines)
+:s/$/\^M/            modifies &quot;abcde&quot;    to &quot;abcde^M&quot;
+:s/\w\+/\u\0/g       modifies &quot;bla bla&quot;  to &quot;Bla Bla&quot;
+</code></pre></li>
+<li>tab commands
+<ul>
+<li>LtL - nex tab</li>
+<li>Ltn - new tab</li>
+</ul></li>
+<li>i (insert)</li>
+<li>motion D - Deletes line</li>
+<li>set nohlsearch same thing but permanent</li>
+<li><em>. in command mode repeats last command</em></li>
+<li>:so % - restarts vimrc file without having to close+reopen</li>
+<li>m + (character) - set mark in file</li>
+<li>backtick + mark charcter jumps to that file at that location</li>
+<li>f &amp; t - jump to character on line. f at the char, t before char</li>
+<li>&lt;s-*&gt; - in normal mode searches for the word under cursor</li>
+<li><c-w>[w, -, +, etc..] - key for manipulating windows</li>
+<li>:next/:previous - moving between open vi files</li>
+</ul></li>
+<li>Settings:
+<ul>
+<li>set nu - nonu – line numbers</li>
+<li>:noh turns of highlighting until the next search</li>
+</ul></li>
+<li>Mapping:
+<ul>
+<li>nunmap - defaults a keymap</li>
+<li><em>always</em> use the noremap version of the commands</li>
+<li>onoremap - used for movement remaps</li>
+</ul></li>
+<li>Text Objects
+<ul>
+<li>iw =&gt; “inner word”(works from anywhere in a word)</li>
+<li>it =&gt; “inner taf”(the contents of an HTML tag)</li>
+<li>i" =&gt; “inner quotes”</li>
+<li>ip =&gt; “inner paragraph”</li>
+<li>as =&gt; “a sentence”</li>
+</ul></li>
+</ul>
+<h2 id="regular-expressions">Regular expressions:</h2>
+<pre><code>* \* - matches any charcter(and number?)</code></pre>
+<pre><code>          # Example Regex
+
+              \([^,]*\), \(.*\)
+
+  The first part between \( \) matches &quot;Last&quot;   \(     \)
+      match anything but a comma                    [^,]
+      any number of times                             *
+  matches &quot;, &quot; literally                                ,
+  The second part between \( \) matches &quot;First&quot;        \(  \)
+      any character                             .
+      any number of times                         *</code></pre>
+<blockquote>
+<p>\wsl$ - how to access linux in explorer</p>
+</blockquote>
+<blockquote>
+<p>curl + url &gt; (new file name) — then -&gt; chmod +x (file name) ix</p>
+</blockquote>
+<blockquote>
+<p>alias g=’git’ alias st=’git status’ alias com=’git commit -m’ alias clone=’git clone’ alias sth=’git stash alias lg=’git log’alias u=’git add -u’ alias allias=’git add .’</p>
+</blockquote>
+<blockquote>
+<p>how to access c drive: cd /mnt/c</p>
+</blockquote>
+<h2 id="godot-globalsingleton-function--place-in-project-settings"><strong>Godot Global(singleton) function -place in project settings:</strong></h2>
+<pre><code>
+     func instance_node(node, location, parent):
+         var node_instance = node.instance()
+
+                parent.add_child(node_instance)
+                    node_instance.global_position = location
+
+                            return node_instance</code></pre>
+<h2 id="pandoc">Pandoc:</h2>
+<pre><code>* pandoc -o -s --template=&lt;template path&gt; &lt;file name&gt;.html  &lt;file name of file to convert&gt;
+* then use command preview while in directory and a webpage should pop up
+* \#\# my header {#foo}</code></pre>
+<h2 id="javascript-object-notation">Javascript Object Notation</h2>
+<p>Here is an example of JSON:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb12-1"><a href="#cb12-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="fu">{</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a>  <span class="dt">&quot;age&quot;</span><span class="fu">:</span> <span class="dv">25</span><span class="fu">,</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>  <span class="dt">&quot;name&quot;</span><span class="fu">:</span><span class="st">&quot;George&quot;</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a>  <span class="st">&quot;interests&quot;</span><span class="er">:</span> <span class="ot">[</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a>  <span class="st">&quot;linux&quot;</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a>  <span class="st">&quot;Indie rock&quot;</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a>  <span class="st">&quot;hipster girls&quot;</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a>  <span class="ot">]</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="fu">}</span></span></code></pre></div>
+</body>
+</html>
