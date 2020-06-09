@@ -1,4 +1,0 @@
-#!/bin/bash
-
-ln -sf ~/repos/gitlab.com/snapplesauce/notes/index.html  $PWD/index.html
-ls -l $PWD/index.html
